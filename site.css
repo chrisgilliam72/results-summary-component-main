@@ -1,7 +1,7 @@
 @import url('https://fonts.google.com/specimen/Hanken+Grotesk');
       
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -34,20 +34,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 368px;
+  width: 50%;
   height: 512px;
+  gap :1.5rem;
 }
 
 .yourresultheader{
-  margin-bottom: 40px;
   font-family: Hanken Grotesk;
   font-weight: 700;
   font-size: 24px;
-  line-height: 31.27px;
   color:lightblue
 }
-
-
 
 .circlescore{
   position: relative;
@@ -59,7 +56,6 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
-  margin-bottom: 20px;
 }
 
 .greattext{
@@ -67,10 +63,9 @@
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 42px;
   text-align: center;
   color:white;
-  margin-bottom: 20px;
+  margin-bottom: 0.5em;
 }
 
 .performancetext{
@@ -97,7 +92,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
   color:white;
 }
 
@@ -111,10 +105,10 @@
   color:  #303B59;
   display: inline;
   text-align: left;
-  width: 80%;
+  width: 90%;
 }
 .summarysecton{
-  width: 368px;
+  width:50%;
   height: 512px;
   display: flex;
   flex-direction: column;
@@ -129,23 +123,35 @@
   align-items: center;
   height: 272px;
   width: 100%;
+  gap:1em;
 }
 
 .itembox {
   border-radius: 12px;
-  width: 80%;
+  width:90%;
   font-family: 'Hanken Grotesk';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 2em;
-  padding: 10px;
+  padding: 0.5em;
   display: flex;
   justify-content: space-between;
   align-items:center;
-  margin-top: 20px;
 }
 
+.percenttextmark
+{
+  font-family: 'Hanken Grotesk';
+  font-weight: 700;
+  font-size: 18px;
+  color: #303B59;
+}
+
+.percenttextmax
+{
+  opacity: 0.5;
+}
 .icontextbox
 {
   display: flex;
@@ -181,9 +187,8 @@
   font-weight: 700;
   background: #303B59;
   border-radius: 128px;
-  width: 288px;
-  height: 56px;
-  margin-top: 50px;
+  width: 90%;
+  height: 3em;
   text-align: center;
   
 }
@@ -192,3 +197,42 @@
   background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
 }
 
+@media (max-width:375px)
+{
+  .container {
+    width:300px;
+  }
+
+  .childcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: start;
+    height: 100%;
+  }
+
+  .resultcard
+  {
+    width: 100%;
+  }
+  .summarysecton
+  {
+    width: 100%;
+    justify-content: between;
+  }
+
+  .itembox
+  {
+    font-size: 16px;
+  }
+
+  .summarybox
+  {
+    width: 100%;
+  }
+
+  .attribution {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+}
